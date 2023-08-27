@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Real State</title>
+</head>
+<body>
+    
+
+
+
+<!-- ###### header section ############# -->
+<header>
+ <a href="#" class="logo"><span>Real</span>Estate</a>
+
+   <nav class="navbar">
+    <a href="#home">home</a>
+    <a href="#booking">Booking</a>
+    <a href="#about">Abput Us</a>
+    <a href="#featured">featured</a>
+    <a href="#explore">Explore New</a>
+    <a href="#agents">agents</a>
+    <a href="#conatct">contact</a>
+   </nav>
+
+   <div class="icons">
+    <div id="menu-bars" class="fa-solid fa-bars"></div>
+    <a href="#" class="fa-solid fa-heart"></a>
+    <a href="#" class="fa-solid fa-user"></a>
+   </div>
+  
+
+
+
+</header>
+
+
+
+
+
+
+<!-- ######## home ###########  -->
+  
+<section class="home" id="home">
+    <div class="head_container">
+      <div class="box">
+        <div class="text">
+          <h1>Find Your Room Here</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+          <button>MORE INFO</button>
+        </div>
+      </div>
+      <div class="image">
+        <!-- <img src="./image/home.jpg" class="slide">
+         -->
+         <img src="./image/pexels-binyamin-mellish-186077.jpg" alt="" class="slide">
+       
+      </div>
+      <div class="image_item">
+        <img src="./image/home.jpg" alt="" class="slide active" onclick="img('image/home.jpg')">
+        <img src="./image/pexels-pixabay-210538.jpg" alt="" class="slide active" onclick="img('image/pexels-pixabay-210538.jpg')">
+        <img src="./image/pexels-binyamin-mellish-186077.jpg" alt="" class="slide active" onclick="img('image/pexels-binyamin-mellish-186077.jpg')">
+        <img src="./image/pexels-pixabay-280222.jpg" alt="" class="slide" onclick="img('image/pexels-pixabay-280222.jpg')">
+        <!-- <img src="./image/pexels-pixabay-280229.jpg" alt="" class="slide" onclick="img('image/pexels-pixabay-280229.jpg')">
+         -->
+      </div>
+    </div>
+  </section>
+  <script>
+    function img(anything) {
+      document.querySelector('.slide').src = anything;
+    }
+
+    function change(change) {
+      const line = document.querySelector('.image');
+      line.style.background = change;
+    }
+  </script>
+
+
+<!-- ##########  booking #########  -->
+<!-- <h1 class="heading">Booking</h1> -->
+<section class="booking" id="booking">
+ 
+
+    <form action="">
+
+   <h3>Find Your Perfect Home</h3>
+   <div class="buttons-container">
+         <a href="#" class="btn-primary">for rent</a>
+         <a href="#" class="btn-primary">for sell</a>
+</div>
+
+
+<div class="inputbox">
+    <input type="search" name="" placeholder="neighbourhood" id="">
+    <input type="search" name="" placeholder="city" id="">
+    <input type="email" name="" placeholder="email id" id="">
+    <input type="phone number" name="" placeholder="phone number" id="">
+    <select name="" id="">
+        <option value="" disabled hiddden selected>minimum price</option>
+        <option value="$5000">$5000</option>
+        <option value="$10000">$5000</option>
+        <option value="$15000">$15000</option>
+        <option value="$20000">$20000</option>
+        <option value="$30000">$30000</option>
+    </select>
+    
+    <select name="" id="">
+        <option value="" disabled hiddden selected>maximum price</option>
+        <option value="$35000">$35000</option>
+        <option value="$40000">$40000</option>
+        <option value="$45000">$45000</option>
+        <option value="$50000">$50000</option>
+        <option value="$55000">$55000</option>
+    </select>
+  
+    <select name="" id="">
+        <option value="" disabled hiddden selected>property status</option>
+        <option value="Ready For shift">Ready To Shift</option>
+        <option value="Under Construction">Under Cons</option>
+        <option value="furnished">Furnished</option>
+        <option value="semi-furnished">semi-furnished</option>
+        <option value="without furnished">without furnished</option>
+    </select>
+    <select name="" id="">
+        <option value="" disabled hiddden selected>property type</option>
+        <option value="flat">flat</option>
+        <option value="house">house</option>
+        <option value="shop">shop</option>
+        <option value="warehouse">warehouse</option>
+        <option value="land">land</option>
+    </select>
+    <select name="" id="">
+        <option value="" disabled hiddden selected>BHK</option>
+        <option value="1 BHK">1 BHK</option>
+        <option value="2 BHK">2 BHK</option>
+        <option value="3 BHK">3 BHK</option>
+        <option value="4 BHK">4 BHK</option>
+        <option value="5 BHK">5 BHK</option>
+    </select>
+    <select name="" id="">
+        <option value="" disabled hiddden selected>Facilities</option>
+        <option value="Parking Lot">Parking Lot</option>
+        <option value="Swimming Pool">Swimming Pool</option>
+        <option value="Playground">Playground</option>
+        <option value="security">security</option>
+        <option value="all">all</option>
+    </select>
+    <select name="" id="">
+        <option value="" disabled hiddden selected>Bedrooms</option>
+        <option value="1 bedroom">1 bedroom</option>
+        <option value="2 bedroom">2 bedroom</option>
+        <option value="3 bedroom">3 bedroom</option>
+        <option value="4 bedroom">4 bedroom</option>
+        <option value="5 bedroom">5 bedroom</option>
+    </select>  
+    <select name="" id="">
+        <option value="" disabled hiddden selected>Bathroom</option>
+        <option value="1 bathroom">1 bathroom</option>
+        <option value="2 bathroom">2 bathroom</option>
+        <option value="3 bathroom">3 bathroom</option>
+        <option value="4 bathroom">4 bathroom</option>
+        <option value="5 bathroom">5 bathroom</option>
+    </select>  
+</div>
+
+<input type="submit" value="search property" class="btn-primary">
+    </form>
+</section>
+
+<!-- ########## booking ends ################  -->
+
+<!-- ############ about us ###################  -->
+
+
+<section class="about" id="about">
+    <div class="about-wrapper container">
+<div class="about-text">
+<h1 class="small">About Us</h1>
+<h2>Why Choose Us ?</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, dolores! Ipsam sit libero explicabo fugit quis nobis fuga, natus reprehenderit in ipsa iure sed incidunt deserunt quam fugiat esse maxime tempore eveniet ad! Quasi ratione dolorum laborum rerum sapiente culpa?</p>
+<div class="icons-container">
+  
+    <div class="icons">
+        <i class="fa-solid fa-indian-rupee-sign"></i>
+        <span>Easy Payments</span>
+    </div>
+    <div class="icons">
+        <i class="fa-solid fa-phone-volume"></i>
+        <span>24/7 Free Service</span>
+    </div>
+
+</div>
+
+</div>
+<div class="about-img">
+    <img src="./image/pexels-kindel-media-7578864.jpg"alt="About Us">
+
+</div>
+
+    </div>
+</section>
+
+
+
+
+
+<!-- ########## featured  section #######  -->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>featured</span> properties </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image-container">
+                <img src="./image/image.ft 1.jpg" alt="">
+                <div class="info">
+                    <h3>3 days ago</h3>
+                    <h3>for rent</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>1</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mo</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>modern apartments</h3>
+                    <p>jogeshwari west, mumbai, india - 400104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn-primary">request info</a>
+                    <a href="#" class="btn-primary">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="./image/image.ft 2.jpg" alt="">
+                <div class="info">
+                    <h3>6 days ago</h3>
+                    <h3>for sell</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>2</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>7</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mo</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>modern apartments</h3>
+                    <p>jogeshwari west, mumbai, india - 400104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn-primary">request info</a>
+                    <a href="#" class="btn-primary">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="./image/image.ft 3.jpg" alt="">
+                <div class="info">
+                    <h3>1 days ago</h3>
+                    <h3>for rent</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>1</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>6</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mo</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>modern apartments</h3>
+                    <p>jogeshwari west, mumbai, india - 400104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn-primary">request info</a>
+                    <a href="#" class="btn-primary">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="./image/image.ft 4.jpg" alt="">
+                <div class="info">
+                    <h3>9 days ago</h3>
+                    <h3>for rent</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>2</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>6</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mo</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>modern apartments</h3>
+                    <p>jogeshwari west, mumbai, india - 400104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn-primary">request info</a>
+                    <a href="#" class="btn-primary">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="./image/image.ft 5.jpg" alt="">
+                <div class="info">
+                    <h3>10 days ago</h3>
+                    <h3>for sell</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>3</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>8</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mo</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>modern apartments</h3>
+                    <p>jogeshwari west, mumbai, india - 400104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn-primary">request info</a>
+                    <a href="#" class="btn-primary">view details</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image-container">
+                <img src="./image/image.ft 6.jpg" alt="">
+                <div class="info">
+                    <h3>3 days ago</h3>
+                    <h3>for sell</h3>
+                </div>
+                <div class="icons">
+                    <a href="#" class="fas fa-film"><h3>1</h3></a>
+                    <a href="#" class="fas fa-camera"><h3>4</h3></a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="price">
+                    <h3>$25,000/mo</h3>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-envelope"></a>
+                    <a href="#" class="fas fa-phone"></a>
+                </div>
+                <div class="location">
+                    <h3>modern apartments</h3>
+                    <p>jogeshwari west, mumbai, india - 400104</p>
+                </div>
+                <div class="details">
+                    <h3> <i class="fas fa-expand"></i> 3500 sqft </h3>
+                    <h3> <i class="fas fa-bed"></i> 3 beds </h3>
+                    <h3> <i class="fas fa-bath"></i> 2 baths </h3>
+                </div>
+                <div class="buttons">
+                    <a href="#" class="btn-primary">request info</a>
+                    <a href="#" class="btn-primary">view details</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</section>
+
+
+<!-- ############## explore more ##############  -->
+
+  <div class="explore" id="explore">
+
+    <h2 class="heading">Explore More Property</h2>
+
+     <div class="list-container">
+        <div class="left-col">
+            <p>200+ options</p>
+            <h1>Recommended place in Mumbai </h1>
+         <div class="house">
+            <div class="house-img">
+                <img src="./image/new img 1.jpg" alt="">
+            </div>
+          <div class="house-info">
+            <p>Private Villa An resort </p>
+            <h3>Deluxe Super Rooms</h3>
+            <p>1 Bedroom | 1 Bathroom | Kitchen | Furnished | Wifi</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>     
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star-half-stroke"></i>
+
+             <div class="house-price">
+                 <p>2 Guest</p>
+                 <h4>& 10000 <span>/ Month</span></h4>
+             </div>
+        </div>
+     </div>
+
+         <div class="house">
+            <div class="house-img">
+                <img src="./image/new img 2.jpg" alt="">
+            </div>
+          <div class="house-info">
+            <p>Private Villa An resort </p>
+            <h3>Deluxe Super Rooms</h3>
+            <p>1 Bedroom | 1 Bathroom | Kitchen | Furnished | Wifi</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>     
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star-half-stroke"></i>
+
+             <div class="house-price">
+                 <p>2 Guest</p>
+                 <h4>$ 10000 <span>/ Month</span></h4>
+             </div>
+        </div>
+     </div>
+         <div class="house">
+            <div class="house-img">
+                <img src="./image/new img 3.jpg" alt="">
+            </div>
+          <div class="house-info">
+            <p>Private Villa An resort </p>
+            <h3>Deluxe Super Rooms</h3>
+            <p>1 Bedroom | 1 Bathroom | Kitchen | Furnished | Wifi</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>     
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star-half-stroke"></i>
+
+             <div class="house-price">
+                 <p>2 Guest</p>
+                 <h4>$ 10000 <span>/ Month</span></h4>
+             </div>
+        </div>
+     </div>
+         <div class="house">
+            <div class="house-img">
+                <img src="./image/new img 4.jpg" alt="">
+            </div>
+          <div class="house-info">
+            <p>Private Villa An resort </p>
+            <h3>Deluxe Super Rooms</h3>
+            <p>1 Bedroom | 1 Bathroom | Kitchen | Furnished | Wifi</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>     
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star-half-stroke"></i>
+
+             <div class="house-price">
+                 <p>2 Guest</p>
+                 <h4>$ 10000 <span>/ Month</span></h4>
+             </div>
+        </div>
+     </div>
+     
+         <div class="house">
+            <div class="house-img">
+                <img src="./image/new img 5.jpg" alt="">
+            </div>
+          <div class="house-info">
+            <p>Private Villa An resort </p>
+            <h3>Deluxe Super Rooms</h3>
+            <p>1 Bedroom | 1 Bathroom | Kitchen | Furnished | Wifi</p>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>     
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+             <i class="fa-solid fa-star-half-stroke"></i>
+
+             <div class="house-price">
+                 <p>2 Guest</p>
+                 <h4>$ 10000 <span>/ Month</span></h4>
+             </div>
+        </div>
+     </div>
+
+     
+
+
+     </div>
+ <div class="right-col">
+    <div class="side-bar">
+        <h2>Select Filters</h2>
+        <h3>Property Types</h3>
+        <div class="option">
+            <input type="checkbox"><p>House</p> <span>(0)</span>
+        </div>
+        <div class="option">
+            <input type="checkbox"><p>Hotel</p> <span>(0)</span>
+        </div>
+        <div class="option">
+            <input type="checkbox"><p>Flat</p> <span>(0)</span>
+        </div>
+        <div class="option">
+            <input type="checkbox"><p>Villa</p> <span>(0)</span>
+        </div>
+        <div class="option">
+            <input type="checkbox"><p>Resort Guest house</p> <span>(0)</span>
+        </div>
+   
+        <h3> Facilities</h3>
+   <div class="option">
+    <input type="checkbox"> <p>Air Condition Room</p> <span>(0)</span>
+   </div>
+   <div class="option">
+    <input type="checkbox"> <p>Free Wifi</p> <span>(0)</span>
+   </div>
+  
+   <div class="option">
+    <input type="checkbox"> <p>Security Gaurd</p> <span>(0)</span>
+   </div>
+   <div class="option">
+    <input type="checkbox"> <p>Swimming pool</p> <span>(0)</span>
+   </div>
+
+
+    </div>
+ </div>
+  </div>
+
+
+<!-- ############ testimonials #############  -->
+
+<section class="agents" id="agents">
+    <h2 class="feedback-title">Our Agents</h2>
+    <div class="feedback-container conatiner">
+       
+  <div class="feedback-box">
+    <div class="star-rating">
+        <i class="fa-solid fa-star text-gold"></i>
+        <i class="fa-solid fa-star text-gold"></i>
+        <i class="fa-solid fa-star text-gold"></i>
+        <i class="fa-solid fa-star text-gold"></i>
+        <i class="fa-solid fa-star text-gold"></i>
+       </div>
+
+       <p class="feedback-test">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, corrupti?</p>
+     <div class="customer-detail">
+        <div class="customer-photo"><img src="./image/agents 1.jpg"alt=""></div>
+        <p class="customer-name">Rajat khan</p>
+     </div>
+
+     </div>
+  <div class="feedback-box">
+       <div class="star-rating">
+        <i class="fa-solid fa-star text-gold"></i>
+        <i class="fa-solid fa-star text-gold"></i>
+        <i class="fa-solid fa-star text-gold"></i>
+        <i class="fa-solid fa-star text-gold"></i>
+        <i class="fa-solid fa-star text-gold"></i>
+       </div>
+
+       <p class="feedback-test">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, corrupti?</p>
+     <div class="customer-detail">
+        <div class="customer-photo"><img src="./image/agents 2.jpg"alt=""></div>
+        <p class="customer-name">Rajat khan</p>
+     </div>
+
+     </div>
+  <div class="feedback-box">
+    <div class="star-rating">
+        <i class="fa-solid fa-star text-gold"></i>
+        <i class="fa-solid fa-star text-gold"></i>
+        <i class="fa-solid fa-star text-gold"></i>
+        <i class="fa-solid fa-star text-gold"></i>
+        <i class="fa-solid fa-star text-gold"></i>
+       </div>
+       <p class="feedback-test">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, corrupti?</p>
+     <div class="customer-detail">
+        <div class="customer-photo"><img src="./image/agents 3.jpg"alt=""></div>
+        <p class="customer-name">Rajat khan</p>
+     </div>
+
+     </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ############ foooter style ###########  -->
+
+
+<section class="footer">
+    <div class="box-container">
+        
+        <div class="box">
+            <h3>Locations</h3>
+        <a href="#">India</a>
+        <a href="#">Japan</a>
+        <a href="#">USA</a>
+        <a href="#">France</a>
+        <a href="#">Russian</a>
+        </div>
+
+        
+        <div class="box">
+            <h3>Contact Info</h3>
+        <a href="#">+122-234-7689</a>
+        <a href="#">+111-222-3333</a>
+        <a href="#">mdrianurrahaman@gmail.com</a>
+        <a herf="#">foodcorner@gmail.com</a>
+        </div>
+
+        <div class="box">
+            <h3>Follow Us</h3>
+        <a href="#">Facebook<i class="fa-brands fa-square-facebook fa-2x"></i> </a>
+        <a href="#">Twitter<i class="fa-brands fa-twitter fa-2x"></i> </a>
+        <a href="#">Instagram <i class="fa-brands fa-instagram fa-2x"></i> </a>
+        </div>
+    </div>
+
+<div class="doneby">@rian2023</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+<script>
+
+let menu = document.querySelector('#menu-bars');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+    navbar.classList.toggle('active');
+    menu.classList.toggle('fa-times');
+}
+
+window.onscroll = () =>{
+    navbar.classList.remove('active');
+    menu.classList.remove('fa-times'); 
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

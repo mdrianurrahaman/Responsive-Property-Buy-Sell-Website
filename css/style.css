@@ -1,0 +1,815 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+
+*{
+     font-family: 'Nunito' , sans-serif;
+     margin:0; padding:0;
+     box-sizing:border-box;
+     outline:none; border:none;
+     text-decoration: none;
+     text-transform: capitalize;
+}
+
+html{
+    font-size:62.5%;
+    overflow-x:hidden;
+     scroll-behavior: smooth;
+     scroll-padding-top:7rem ;
+}
+
+body{
+    background:#f7f7f7;
+}
+section{
+    padding:2rem 9%;
+} 
+header{
+    position:fixed;
+    top:0;left:0 ;right:0;
+    z-index:1000;
+    background:#fff;
+    padding:1.5rem 9%;
+    box-shadow:0.5rem 1rem rgba(0,0,0,.1);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    font-weight:bolder;
+    font-size:2.5rem;
+    color:#333;
+
+}
+
+header .logo span{
+    color:#dc143c;
+}
+
+header .navbar a{
+    color:#333;
+    font-size: 2rem;
+    padding:0 1.5rem;
+}
+
+header .navbar a:hover{
+    color:#dc143c;
+}
+
+header .icons #menu-bars,
+header .icons a{
+    height:4.5rem;
+    line-height:4.5rem ;
+    width:5rem;
+    font-size:2rem;
+    margin-right:.5rem;
+    border-radius: .5rem;
+    color:#dc143c;
+    background:#fff ;
+    text-align: center;
+}
+
+header .icons #menu-bars:hover,
+header .icons a:hover{
+    background-color: #dc143c;
+    color:#fff;
+}
+
+header .icons #menu-bars{
+    display:none;
+}
+
+
+/* ############ home #############  */
+.home .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    
+  }
+  
+  .home .text {
+    max-width: 50%;
+    color: white;
+    margin: 20% 0 0 10%;
+  }
+  
+  .home h1 {
+    font-size: 80px;
+    font-weight: 400;
+  }
+  
+  .home p {
+    font-weight: 400;
+    line-height: 25px;
+    font-family: sans-serif;
+    font-size: 17px;
+    margin: 50px 0 0 50px;
+  }
+  
+  button {
+    padding: 20px 40px;
+    background: none;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  .home button {
+    margin-left: 50px;
+  }
+  
+  .home .image_item {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .home .image_item img {
+    width: 140px;
+    height: 94px;
+    margin: 10px;
+    transition: 0.5s;
+  }
+  
+  .home .image_item img.active {
+    border: 2px solid white;
+  }
+  
+  .home .box .text {
+    position: relative;
+  }
+  
+  .home .box .text::after {
+    position: absolute;
+    content: 'H';
+    font-size: 500px;
+    top: -120%;
+    font-weight: bold;
+    opacity: 0.1;
+  }
+  
+
+/* ########### booking ########  */
+
+.booking{
+    min-height: 100vh;
+    background:url('../image/pexels-aleksandar-pasaric-325193.jpg') no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.booking form{
+    margin-top: 1rem;
+    background: #fff;
+    border-radius:.5rem;
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.2);
+    border:1rem solid rgba(0,0,0,.2);
+    width:70rem;
+    padding:2rem;
+
+}
+.booking form h3{
+    text-align: center ;
+    color:#333;
+    font-size: 3rem;
+}
+
+.booking form .buttons-container{
+    display:flex;
+    gap:1.5rem;
+}
+
+ .btn-primary{
+    margin-top: 1rem;
+    display:inline-block;
+    padding:.8rem 3.5rem;
+    border-radius: .5rem;
+    font-size: 1.7rem;
+    color:#dc143c;
+    background:#ffcccb;
+    cursor:pointer;
+
+ }
+
+ .btn-primary:hover{
+    background:#dc143c;
+    color:#fff;
+
+ }
+
+.booking form .buttons-container .btn-primary{
+    flex:1;
+}
+
+.booking form .inputbox{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-top: 2rem;
+}
+
+.booking form input,
+.booking form .inputbox select{
+    flex:1 1 30rem;
+    border-collapse:.1rem solid #333;
+    box-shadow:0 .5rem 1.5rem rgba(0,0,0,0.2);
+    font-size: 1.5rem;
+    padding:1rem;
+    text-transform: none;
+
+}
+
+/* ########### about #############  */
+/* .booking{ */
+    /* min-height: 100vh;
+    background:url('../image/pexels-aleksandar-pasaric-325193.jpg') no-repeat;
+    background-size:cover;
+    background-attachment: fixed; */
+#about{
+    padding: 50px 0px ;
+    min-height: 50vh;
+    background:url('../image/pexels-aleksandar-pasaric-2987769.jpg') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.about-wrapper{
+    display:flex;
+    flex-wrap: wrap;
+
+}
+#about h2{
+    font-size: 3.2rem;
+}
+#about p{
+    font-size:1.6rem;
+    color:#555;
+}
+
+#about .about-text h1{
+    font-size: 3.2rem;
+  color:black;
+  
+}
+.about-img{
+flex: 1 1 400px;
+padding:30px;
+transform:translateX(150%);
+animation: about-img-animation 1s ease-in-out forwards;
+}
+@keyframes about-img-animation{
+    100%{
+        transform:translate(0);
+    }
+}
+.about-text{
+    flex: 1 1 400px;
+padding:30px;
+margin:auto;
+transform:translateX(-150%);
+animation: about-text-animation 1s ease-in-out forwards;
+}
+@keyframes about-text-animation{
+    100%{
+        transform:translate(0);
+    }
+}
+
+
+
+.about-img img{
+    display: block;
+    height: 400px;
+    max-width:100%;
+    margin:auto;
+    object-fit:cover;
+    object-position:right;
+    border-radius: 3rem 0 3rem 3rem;
+    
+}
+
+.about .icons-container{
+    display:flex;
+    gap:1rem;
+    flex-wrap:wrap;
+    padding:1rem 0;
+    margin-top:.5rem;
+}
+.about .icons-container .icons{
+    background:#eee;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.2);
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    gap:1 1 17rem;
+    padding:1.5rem 1rem;
+
+}
+.about .icons-container .icons i{
+    font-size:2.5rem;
+    color:#117964;
+}
+
+.about .icons-container .icons span{
+    font-size:1.5rem;
+    color: black;
+    padding-left: 7px;
+}
+
+
+
+
+/* ########## featured #################  */
+
+.featured{
+    min-height: 95vh;
+    background:url('../image/pexels-pixabay-53176.jpg')no-repeat;
+    background-size:cover;
+    width: 100%;
+    color:#333
+}
+
+.featured .box-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.featured .box-container .box{
+   border:.1rem solid rgba(0,0,0,0.2);
+   box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+   border-radius: 5rem 0rem 5rem 5rem;
+   overflow:hidden;
+   background:#fff; 
+   flex:1 1 40rem;
+}
+.featured .box-container .box .image-container{
+    overflow:hidden;
+    position: relative;
+    width: 100%;
+    height: 25rem;
+}
+
+
+
+.featured .box-container .box .image-container img{
+    width:100%;
+height:100%;
+    object-fit:fill;
+    transition:.2s linear;
+}
+
+.featured .box-container .box:hover .image-container img{
+    transform:scale(1.1);
+}
+
+.featured .box-container .box .image-container .info{
+    position: absolute;
+    top:1rem; left:2rem;
+    display: flex;
+}
+
+.featured .box-container .box .image-container .info h3{
+    font-weight: 500;
+    font-size: 1.4rem;
+    color:#fff;
+    background:rgba(0,0,0,.3);
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    margin-left: 1rem;
+}
+
+.featured .box-container .box .image-container .icons{
+    position: absolute;
+    bottom:1rem; right:0;
+    display: flex;
+}
+
+.featured .box-container .box .image-container .icons a{
+    font-size: 1.4rem;
+    color:#fff;
+    display: flex;
+    border-radius: .5rem;
+    background: rgba(0,0,0,.3);
+    margin-right: 1rem;
+    padding:.7rem;
+}
+
+.featured .box-container .box .image-container .icons a h3{
+    font-weight: 500;
+    padding-left: .5rem;
+}
+
+.featured .box-container .box .image-container .icons a:hover{
+    background:#dc143c;
+}
+
+.featured .box-container .box .content{
+    padding:1.5rem;
+}
+
+.featured .box-container .box .content .price{
+    display: flex;
+    align-items: center;
+}
+
+.featured .box-container .box .content .price h3{
+    color:#333;
+    font-size: 2rem;
+    margin-right: auto;
+}
+
+.featured .box-container .box .content .price a{
+    color:#666;
+    font-size: 1.5rem;
+    margin-right: .5rem;
+    border-radius: .5rem;
+    height:4rem;
+    width:4rem;
+    line-height: 4rem;
+    text-align: center;
+    background:#f7f7f7;
+}
+
+.featured .box-container .box .content .price a:hover{
+    background:#dc143c;
+    color:#fff;
+}
+
+.featured .box-container .box .content .location{
+    padding:1rem 0;
+}
+
+.featured .box-container .box .content .location h3{
+    font-size: 2.5rem;
+    color:#333;
+}
+
+.featured .box-container .box .content .location p{
+    font-size: 1.5rem;
+    color:#666;
+    line-height: 1.5;
+    padding-top: .5rem;
+}
+
+.featured .box-container .box .content .details{
+    padding:.5rem 0;
+    display: flex;
+}
+
+.featured .box-container .box .content .details h3{
+    flex:1;
+    padding:1rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    color:#999;
+    font-size: 1.3rem;
+}
+
+.featured .box-container .box .content .details h3 i{
+    color:#333;
+    padding-left: .5rem;
+}
+
+.featured .box-container .box .content .buttons{
+    padding-left: 2rem;
+    display: flex;
+    gap:1rem;
+}
+
+
+
+/* ############ explore ############  */
+
+
+.explore{
+    padding-left: 20px;
+
+}
+
+.explore h2{
+    padding-top: 10px;
+    text-align: center;
+    font-size: 5rem;
+    color:darkblue;
+}
+
+.list-container{
+
+    margin-top: 50px;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+
+.left-col{
+    flex-basis: 60%;
+}
+.right-col{
+    flex-basis:30%;
+}
+.left-col h1{
+    color:#333;
+     
+} 
+
+.house{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:30px 0;
+    border-top: 1px solid #ccc;
+}
+
+.house-img{
+    flex-basis: 40%;
+}
+
+.house-info{
+    flex-basis: 58%;
+    color:#555;
+}
+
+.house-img img{
+    height:30rem;
+    width:100%;
+    border-radius: 12px;
+}
+
+.house-info p{
+    font-size: 15px;
+}
+
+.house-info h3{
+    font-weight: 600;
+    color:#333;
+    font-size: 22px;
+    margin:4px 0;
+}
+
+.house-info i{
+    color:#dc143c;
+    font-size: 18px;
+    margin:10px 1px;
+
+}
+
+.house-price{
+    text-align: right;
+}
+
+.house-price h3{
+    font-size: 20px;
+}
+
+.house-price h3 span{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.side-bar{
+    border:1px solid #333;
+    padding:30px 20px;
+    margin-top:30px;
+    height: 50rem;
+    padding-right: 10px;
+}
+.side-bar h2{
+    font-weight: 500;
+    font-size: 3rem;
+    color:#333;
+}
+.side-bar h3{
+    font-weight: 500;
+    font-size: 2rem;
+    margin:20px 0 10px;
+}
+
+.option{
+  display:flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.option p{
+flex:1;
+font-size: 1.5rem;
+
+}
+
+.option input{
+    margin-right:15px;
+    cursor:pointer;
+}
+
+/* ########## testimonials ##########  */
+.agents{
+    padding: 5rem 0rem;
+    background:rgba(243,243,243);
+}
+
+.agents h2{
+color:#dc143c;
+}
+
+.feedback-title{
+    text-align:center;
+    font-size:3rem;
+    font-weight:400;
+    color:#555;
+}
+
+.feedback-container{
+
+    display:flex;
+    justify-content:space-between;
+    font-size:1.6rem;
+    padding:1rem;
+
+}
+
+.text-gold{
+    color:#ff9529;
+}
+
+.feedback-box .feedback-text{
+    margin:1rem 0;
+    color:#444;
+
+}
+.feedback-box{
+    text-align:center;
+    padding:1rem;
+}
+
+.customer-photo img{
+    display:block;
+    width:100px;
+    height: 100px;
+    object-fit:cover;
+    object-position: center;
+    border-radius:50%;
+    margin:auto;
+}
+
+/* ######### footer #########  */
+
+
+.footer .box-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(25rem , 1fr));
+    gap:1.5rem;
+    padding-left: 180px;
+    padding-right: 20px;
+    background-color: rgba(243,243,243);
+ }
+
+.footer .box-container .box h3{
+    padding:.5rem 0;
+    font-size:2.5rem;
+    color:black;
+}
+.footer .box-container .box a{
+    display: block;
+    padding:.5rem 0;
+    font-size:1.5rem;
+    color:var(--light-color);
+    text-decoration: none;
+}
+.footer .box-container .box a:hover{
+ color:green;
+   text-decoration: underline;
+}
+
+.footer .box-container .box i{
+    padding-left: 10px;
+}
+
+
+.footer .doneby{
+    text-align: center;
+    border-top: .1rem solid rgba(0,0,0,.1);
+    font-size:2rem;
+    color:black;
+    padding:.5rem;
+    padding-top: .1rem;
+    margin-top:1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:990px){
+    html{
+        font-size:55%;
+    }
+    header{
+        padding:1.5rem 1rem;
+    }
+
+   section{
+    padding:1.5rem;
+   }
+
+
+}
+
+@media(max-width:768px) {
+
+    header .icons #menu-bars{
+        display:inline-block;
+    }
+    header .navbar{
+        position:absolute;
+        left:0 ; right:0; top:100%;
+        background:#fff;
+        border-top:.1rem solid #333;
+        border-bottom:.1rem solid #333;
+        transition:.2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0,0 0);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+
+header .navbar a{
+    display:block;
+    padding:1.5rem;
+    margin:1.5rem;
+    background:#fff;
+    border:.1rem solid #333;
+    box-shadow: 0 .5 1rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+
+}
+
+}
+
+@media (max-width:450px){
+    html{
+        font-size:50%;
+    }
+}
+                        
+
+@media only screen and (max-width:700px){
+    .list-container{
+        margin-top: 150px;
+    }
+    .left-col, .right-col, .house-img, .house-info{
+        flex-basis:100%;
+    }
+
+    .left-col h1{
+        font-size:22px;
+    }
+    .house-info{
+        font-size: 18px;
+    }
+    .house-info i{
+        font-size: 16px;
+    }
+}
+
+@media ( max-width: 450px){
+    .option p{
+        flex:1;
+        font-size: .5rem;
+        
+}
+    
+}
